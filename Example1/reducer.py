@@ -19,10 +19,10 @@ for input_line in sys.stdin:
 
     else:
         if last_key:
-            print( "{0}\t{1}".format(last_key, np.round(running_total, 2)))
+            print( "{0}\t\t{1}".format(last_key, np.round(running_total, 2)))
                                
         running_total = value
         last_key = this_key
 
 if last_key:
-    print("{0}\t\t{1}".format(last_key, np.round(running_total)))
+    print("{0}\t\t{1}".format(last_key, np.round(running_total, 2)))
